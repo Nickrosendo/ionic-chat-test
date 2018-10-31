@@ -14,8 +14,9 @@ export class HomePage {
 
   openChat() {
     if (this._window().octadesk) {
-      this._window().octadesk.chat.toggle()
-      this._window().octadesk.chat.login({ name: "Nicolas", email: 'nicolas@teste.com'})
+      this._window().octadesk.chat.show()
+      this._window().octadesk.chat.showApp()
+      this._window().octadesk.chat.login({ name: "Thiago", email: 'thiago@teste.com'})
     }
   }
 }
